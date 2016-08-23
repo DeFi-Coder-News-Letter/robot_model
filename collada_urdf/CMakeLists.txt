@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(collada_urdf)
 
+add_compile_options(-std=c++11)
+
 find_package(catkin REQUIRED COMPONENTS angles collada_parser resource_retriever urdf geometric_shapes tf cmake_modules)
 
 find_package(TinyXML REQUIRED)
